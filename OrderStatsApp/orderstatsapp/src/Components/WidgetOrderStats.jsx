@@ -1,28 +1,27 @@
 import React from 'react';
-import { FiArrowUp,FiArrowDown } from "react-icons/fi";
-import style from "../Styles/Widget.module.css";
+import {useState, useEffect} from "react";
+import OrderStat from './OrderStat';
+import style from "../Styles/App.module.css";
 
+const WidgetOrderStats = () => {
+    const [data,setData] = useState([]);
 
-const WidgetOrderStats = ({obj}) => {
+  useEffect(()=>{
+    fetch("http://localhost:3000/OrderStats")
+    .then((res)=>res.json())
+    .then((res)=>{
+      console.log(res);
+      setData(res);
+    });
+  },[]);
   return (
-    <div className={style.parent}>
-        <div className={style.topbox}>
-            <h2>{obj.stats}</h2>
-            <div style={{color: obj.growth == "increment" ? "green" : "red"}}>
-                {
-                    obj.growth == "increment" ? <FiArrowUp/> : <FiArrowDown/>
-                }
-                {obj.percentValue}
-            </div>
-        </div>
-        <div className={style.bottombox}>
-            <div>
-                <img src={obj.logo} alt="" />
-            </div>
-            <div>
-                <h1>{obj.value}</h1>
-            </div>
-        </div>
+    <div  className={style.app}>
+        {/* <h1>Crypton Assignment</h1> */}
+      {
+        data.map((ele,i)=>{
+          return <OrderStat obj={ele} key ={i}/>
+        })
+      }
     </div>
   )
 }

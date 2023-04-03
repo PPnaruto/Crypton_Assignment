@@ -8,9 +8,9 @@ const WidgetOrderStats = ({obj}) => {
     <div className={style.parent}>
         <div className={style.topbox}>
             <h2>{obj.stats}</h2>
-            <div style={{color: obj.shareGrowth == "increment" ? "green" : "red"}}>
+            <div style={{color: obj.growth == "increment" ? "green" : "red"}}>
                 {
-                    obj.shareGrowth == "increment" ? <FiArrowUp/> : <FiArrowDown/>
+                    obj.growth == "increment" ? <FiArrowUp/> : <FiArrowDown/>
                 }
                 {obj.percentValue}
             </div>

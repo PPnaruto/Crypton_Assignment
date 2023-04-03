@@ -2,10 +2,31 @@
     "OrderStats":[
        {
         "stats":"Revenue",
-        "shareGrowth":"decrement",
+        "growth":"decrement",
         "percentValue":"10%",
         "logo":"https://w7.pngwing.com/pngs/876/902/png-transparent-computer-icons-chart-economic-growth-revenue-free-growth-icon-miscellaneous-text-logo-thumbnail.png",
         "value":"$2.047"
+       },
+       {
+        "stats":"Orders",
+        "growth":"increment",
+        "percentValue":"20%",
+        "logo":"https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png",
+        "value":"356"
+       },
+       {
+        "stats":"Dine in",
+        "growth":"increment",
+        "percentValue":"10%",
+        "logo":"https://thumbs.dreamstime.com/z/dinner-logo-24620384.jpg",
+        "value":"220"
+       },
+       {
+        "stats":"Take Away",
+        "growth":"decrement",
+        "percentValue":"5%",
+        "logo":"https://companieslogo.com/img/orig/TKWY.AS-88c0f96c.png?t=1659645684",
+        "value":"135"
        }
     ]
 }

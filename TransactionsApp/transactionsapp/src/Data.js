@@ -9,7 +9,7 @@ const Data = [
     },
     {
     name:"Kizaru",
-    image:"https://xsgames.co/randomusers/assets/avatars/male/74.jpg",
+    image:"https://xsgames.co/randomusers/assets/avatars/male/77.jpg",
     date:"28 Feb 2023",
     time:"06:23 PM",
     money:"$9.00",

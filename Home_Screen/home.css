@@ -1,0 +1,46 @@
+*{
+    font-family: sans-serif;
+}
+#parent{
+    border: 1px solid black;
+    width: 20%;
+    margin: auto;
+    height: 500px;
+    padding: 20px;
+}
+#child{
+    border: 1px solid red;
+    /* padding: 10px; */
+    height: 400px;
+}
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    border: 1px solid green;
+    padding: 10px;
+}
+#button{
+    background-color: rgb(50, 96, 143);
+    color: white;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#headline{
+    font-family: sans-serif;
+}
+#services{
+    /* font-size: 17px; */
+    font-family: sans-serif;
+    /* font-weight: 500; */
+    color: rgb(43, 41, 41);
+}
+img{
+    width:50px;
+    height: 50px;
+
+}
+
+

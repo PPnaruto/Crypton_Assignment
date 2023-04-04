@@ -1,5 +1,5 @@
 const express = require('express');
-const { getData, postData, updataData, deleteData } = require('../Controller/Records');
+const { getData, postData, updataData, deleteData } = require('../Controller/Record');
 
 const appRouter = express.Router();
 

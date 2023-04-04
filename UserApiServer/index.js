@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cors = require('cors');
 const appRouter = require('./Router/router');
@@ -8,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/',appRouter);
+app.use('/users',appRouter);
 
 app.listen(8080,()=>{
     try{

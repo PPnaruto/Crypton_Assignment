@@ -4,14 +4,12 @@ import style from "../Styles/TransactionsList.module.css";
 import TransactionComp from './TransactionComp';
 
 const TransactionsList = () => {
-
-    console.log(Data);
     
   return (
     <div className={style.parent}>
         <div className={style.header}>
             <p>Last Transactions</p>
-            <p>See All</p>
+            <p style={{color:"gray"}}>See All</p>
         </div>
         <div>
             {

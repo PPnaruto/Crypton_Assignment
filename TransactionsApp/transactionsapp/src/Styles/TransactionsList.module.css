@@ -5,12 +5,24 @@
     width: 35%;
     margin: auto;
     border: 1px solid black;
+    margin-top: 100px;
+    padding: 0 25px;
+    background-color: white;
+    border-radius: 10px;
 }
 .parent p{
     font-size: 20px;
     font-weight: 500;
 }
+.parent>div:last-child{
+    margin-top: -20px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
 .header{
     display: flex;
     justify-content: space-between;
+}
+.header p{
+    font-size: 30px;
 }

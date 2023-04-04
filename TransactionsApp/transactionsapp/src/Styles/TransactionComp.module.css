@@ -1,5 +1,5 @@
 .box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
@@ -52,5 +52,4 @@
     border: 1px solid white;
     margin-top: -40px;
     color: grey;
-    /* font-weight: 500; */
 }

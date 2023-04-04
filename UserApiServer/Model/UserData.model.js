@@ -24,8 +24,11 @@ const UserSchema = new mongoose.Schema({
     pincode:{
         type:String,
         required:true
-    }
-});
+    },
+},{
+    timestamps:{ createdAt: 'createdOn', updatedAt: 'ModifiedOn' }
+}
+);
 
 const User = mongoose.model("Record",UserSchema);
 

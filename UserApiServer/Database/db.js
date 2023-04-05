@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-dotenv.config();
+dotenv.config({
+    path:'./UserApiServer/.env'
+});
 
 const USERNAME = process.env.CLUSTER_USERNAME;
 const PASSWORD = process.env.CLUSTER_PASSWORD;

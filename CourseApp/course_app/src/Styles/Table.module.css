@@ -1,0 +1,15 @@
+.parent{
+    margin: auto;
+}
+.tbody th{
+    gap: 50px;
+    border: 1px solid red;
+}
+.tbody{
+    border: 1px solid red;
+}
+.table{
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+}

@@ -7,7 +7,8 @@ const WidgetOrderStats = () => {
     const [data,setData] = useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:3000/OrderStats")
+    // fetch("http://localhost:3000/OrderStats")
+    fetch("https://crypton-orderstats-json.onrender.com/OrderStats")
     .then((res)=>res.json())
     .then((res)=>{
       console.log(res);

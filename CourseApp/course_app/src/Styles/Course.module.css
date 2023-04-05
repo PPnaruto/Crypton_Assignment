@@ -1,0 +1,27 @@
+.box{
+    /* border: 1px solid crimson; */
+    display: flex;
+    gap: 10px;
+}
+.imagebox{
+    /* border: 1px solid salmon; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.imagebox img{
+    height: 80%;
+    border-radius: 10px;
+}
+.info{
+    /* border: 1px solid green; */
+    align-self: center;
+    margin-top: -10px;
+}
+.info h2{
+    font-weight: 500;
+}
+.info h4{
+    margin-top: -20px;
+    color: gray;
+}

@@ -1,15 +1,47 @@
+*{
+    font-family: sans-serif;
+}
 .parent{
     margin: auto;
-}
-.tbody th{
-    gap: 50px;
-    border: 1px solid red;
-}
-.tbody{
-    border: 1px solid red;
+    border: 1px solid black;
+    width: 75%;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
 }
 .table{
-    border: 1px solid black;
-    width: 50%;
+    /* border: 1px solid black; */
+    width: 90%;
     margin: auto;
+    margin-bottom: 20px;
+}
+.topbox{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.topbox>h3{
+    color: rgb(92, 92, 182);
+}
+.thead th{
+    /* gap: 50px; */
+    text-align: left;
+    /* border: 1px solid red; */
+    font-size: 22px;
+    font-weight: 500;
+    color: gray;
+    
+}
+.thead{
+    /* border: 1px solid red !important; */
+    margin-bottom: 30px;
+}
+
+.tbody{
+    margin-top: 40px;
+    /* border: 1px solid red; */
 }

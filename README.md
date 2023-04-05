@@ -28,6 +28,8 @@ Task4 :  Simple Calc
 	Code has been pushed on github.
 	Since it’s a program file, it has no deployed link.
 
+	Sample Video of the Program :- https://drive.google.com/file/d/17thNnR41u8LWXvAQO9ImJsMYpmLPJGGh/view?usp=share_link
+
 
 Task5 : Responsive home screen
 	Deployed Netlify Link :- https://newhomescreen.netlify.app/

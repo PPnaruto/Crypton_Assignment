@@ -2,6 +2,7 @@ class BankAccount {
     constructor() {
       this.isOpen = false;
       this.details = {};
+      this.ledger = [];
     }
   
     openAccount(
@@ -31,6 +32,12 @@ class BankAccount {
         panNo,
       };
       this.isOpen = true;
+
+      this.ledger.push({
+        type: 'OPEN_ACCOUNT',
+        amount: initialBalance,
+        balance: initialBalance,
+      });
     }
 
     updateKYC(name, dob, email, mobile, adharNo, panNo) {
@@ -44,5 +51,11 @@ class BankAccount {
         this.details.mobile = mobile;
         this.details.adharNo = adharNo;
         this.details.panNo = panNo;
+
+        this.ledger.push({
+            type: 'KYC_UPDATE',
+          });
       }
+
+      
 }

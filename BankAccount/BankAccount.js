@@ -32,4 +32,17 @@ class BankAccount {
       };
       this.isOpen = true;
     }
+
+    updateKYC(name, dob, email, mobile, adharNo, panNo) {
+        if (!this.isOpen) {
+          throw new Error("Account is not open");
+        }
+    
+        this.details.name = name;
+        this.details.dob = dob;
+        this.details.email = email;
+        this.details.mobile = mobile;
+        this.details.adharNo = adharNo;
+        this.details.panNo = panNo;
+      }
 }

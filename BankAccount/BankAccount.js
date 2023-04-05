@@ -75,7 +75,6 @@ class BankAccount {
           throw new Error("Account is not open");
         }
     
-        // TODO: Validate input parameter
         if (this.details.balance < amount) {
           throw new Error("Insufficient balance");
         }
@@ -86,5 +85,37 @@ class BankAccount {
           amount,
           date: new Date(),
         });
+    }
+
+    transferMoney(toName, amount) {
+      if (!this.isOpen) {
+        throw new Error("Account is not open");
       }
+  
+      if (this.details.balance < amount) {
+        throw new Error("Insufficient balance");
+      }
+  
+      this.details.balance -= amount;
+      this.ledger.push({
+        type: "Transfer",
+        to: toName,
+        amount,
+        date: new Date(),
+      });
+    }
+  
+    receiveMoney(fromName, amount) {
+      if (!this.isOpen) {
+        throw new Error("Account is not open");
+      }
+  
+      this.details.balance += amount;
+      this.ledger.push({
+        type: "Receive",
+        from: fromName,
+        amount,
+        date: new Date(),
+      });
+    }
 }

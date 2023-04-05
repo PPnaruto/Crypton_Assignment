@@ -57,5 +57,34 @@ class BankAccount {
           });
       }
 
-      
+    depositMoney(amount) {
+      if (!this.isOpen) {
+        throw new Error("Account is not open");
+      }
+  
+      this.details.balance += amount;
+      this.ledger.push({
+        type: "Deposit",
+        amount,
+        date: new Date(),
+      });
+    }
+
+    withdrawMoney(amount) {
+        if (!this.isOpen) {
+          throw new Error("Account is not open");
+        }
+    
+        // TODO: Validate input parameter
+        if (this.details.balance < amount) {
+          throw new Error("Insufficient balance");
+        }
+    
+        this.details.balance -= amount;
+        this.ledger.push({
+          type: "Withdraw",
+          amount,
+          date: new Date(),
+        });
+      }
 }

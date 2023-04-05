@@ -9,7 +9,8 @@ const CourseTable = () => {
     const [data,setData] = useState([]);
 
     useEffect(()=>{
-        axios.get("http://localhost:8000/courses")
+        // axios.get("http://localhost:8000/courses")
+        axios.get("https://cypton-course-server.onrender.com/courses")
         .then((res)=>{
             console.log(res.data.data);
             setData(res.data.data);

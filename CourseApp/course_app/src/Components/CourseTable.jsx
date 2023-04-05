@@ -24,7 +24,7 @@ const CourseTable = () => {
                 {
                     Data.map((ele)=>{
                         return <tr style={{marginTop:"20px", border:"1px solid green"}}>
-                            <td> <Course name={ele.course_name} lessons={ele.lessons} image={ele.img}/> </td>
+                            <td> <Course name={ele.course_name} lessons={ele.lessons} image={ele.image}/> </td>
                             <td><h2 style={{fontWeight:"500"}}>{ele.start_date}</h2></td>
                             <td> <CompletedLesson lessons={ele.lessons} completedLesson={ele.lessons_Completed}/> </td>
                             <td><h2 style={{fontWeight:"500"}}>{ele.duration}</h2></td>
